@@ -24,10 +24,10 @@ namespace CarLotSimulator
             CarLot carLot = new CarLot();
 
             Car newCar1 = new Car();
-            //Car newCar1 = new Car() {Make = Volve......};
+            //Car newCar1 = new Car() {Make = Volvo......};
             Car newCar2 = new Car();
             Car newCar3 = new Car();
-
+            
             newCar1.Make = "Volvo";
             newCar2.Make = "Audi";
             newCar3.Make = "BMW";
@@ -35,7 +35,6 @@ namespace CarLotSimulator
             newCar1.Model = "s80";
             newCar2.Model = "A8";
             newCar3.Model = "i90";
-
 
             newCar1.Year = 2004;
             newCar2.Year = 2008;
@@ -57,7 +56,12 @@ namespace CarLotSimulator
             carLot.Cars.Add(newCar2);
             carLot.Cars.Add(newCar3);
 
-
+            foreach (Car car in carLot.Cars)
+            {
+                CarLot.CarIncrease(car);
+                Console.WriteLine(CarLot.NumberOfCars);
+            }
+            
             foreach (Car car in carLot.Cars)
             {
                 Console.WriteLine(car.Make);
