@@ -60,10 +60,7 @@ namespace CarLotSimulator
             {
                 CarLot.CarIncrease(car);
                 Console.WriteLine(CarLot.NumberOfCars);
-            }
-            
-            foreach (Car car in carLot.Cars)
-            {
+          
                 Console.WriteLine(car.Make);
                 Console.WriteLine(car.Model);
                 Console.WriteLine(car.Year);
