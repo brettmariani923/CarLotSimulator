@@ -6,7 +6,7 @@ public class CarLot
 { 
     public List<Car> Cars { get; set; } = new List<Car>();
 
-    public static int NumberOfCars { get; set; }
+    public static int NumberOfCars;
 
     public static int CarIncrease(Car car)
     {
